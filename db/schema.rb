@@ -10,13 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_10_31_135302) do
+ActiveRecord::Schema[8.0].define(version: 2025_10_31_151840) do
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "email"
-    t.string "phone_number"
+    t.string "email", null: false
+    t.string "phone"
     t.string "job"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "role", default: "employee", null: false
+    t.string "department"
+    t.string "status", default: "active", null: false
+    t.datetime "last_login_at"
+    t.string "city"
+    t.string "state"
+    t.boolean "is_admin", default: false, null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["role"], name: "index_users_on_role"
+    t.index ["status"], name: "index_users_on_status"
   end
 end
