@@ -2,20 +2,19 @@
 #
 # Table name: users
 #
-#  id            :integer          not null, primary key
-#  city          :string
-#  department    :string
-#  email         :string           not null
-#  first_name    :string
-#  is_admin      :boolean          default(FALSE), not null
-#  job           :string
+#  id            :integer          primary key
+#  city          :text
+#  department    :text
+#  email         :text             not null
+#  first_name    :text             not null
+#  is_admin      :integer          default(0), not null
+#  job           :text
 #  last_login_at :datetime
-#  last_name     :string
-#  name          :string
-#  phone         :string
-#  role          :string           default("employee"), not null
-#  state         :string
-#  status        :string           default("active"), not null
+#  last_name     :text             not null
+#  phone         :text
+#  role          :text             default("employee"), not null
+#  state         :text
+#  status        :text             default("active"), not null
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #

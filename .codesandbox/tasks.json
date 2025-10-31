@@ -1,0 +1,33 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "install bundler",
+      "command": "gem install bundler -v '2.6.9'"
+    },
+    {
+      "name": "bundle install",
+      "command": "bundle install"
+    },
+    {
+      "name": "db:migrate",
+      "command": "bundle exec rake db:migrate"
+    },
+    {
+      "name": "npm install",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "dev": {
+      "name": "start rails and vite",
+      "command": "bin/dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
+    }
+  }
+}
