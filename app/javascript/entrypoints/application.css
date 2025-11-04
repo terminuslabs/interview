@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+* {
+  font-family: "Figtree", sans-serif;
+}
+
+@theme {
+  --color-dark-green: #1f473e;
+  --color-off-gray: #f8f7f7;
+  --color-off-white: #e3e3e3;
+  --color-light-green: #b3e99e;
+  --color-pink: #feb5b5;
+  --color-red: #a02316;
+}
