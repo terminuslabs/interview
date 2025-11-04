@@ -24,7 +24,7 @@
     "dev": {
       "name": "start rails and vite",
       "command": "bin/dev",
-      "runAtStart": false,
+      "runAtStart": true,
       "preview": {
         "port": 3000
       }
