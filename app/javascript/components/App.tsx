@@ -1,14 +1,4 @@
-import React from "react";
-
-type User = {
-  id: number;
-  name: string;
-  email: string;
-  phone_number: string;
-  job: string;
-  created_at: string;
-  updated_at: string;
-};
+import React from 'react';
 
 export default function App() {
   return (
